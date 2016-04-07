@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Assignment One Part One</title>
+<meta name="description" content="">
+</head>
+<body>
+    <form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+        <h1>Please Enter Your Details For Our Dating Website!</h1>
+        <div id="face">
+            <fieldset>
+                <legend>Your Face</legend>
+                <label for="user-image"> Your Image: </label>
+                <input type="file" id="user-image" name="user-image" required> <br>
+                <label for="user-image-preview"> Image Preview: </label>
+                <img id="user-image-preview" name="user-image-preview"> <br>
+            </fieldset>
+        </div>
+        <div id="general-details">
+            <fieldset>
+                <legend>Your General Details</legend>
+                <label for="name"> Name: </label>
+                <input type="text" id="name" name="name" required placeholder="Your full name"> <br>
+                <label for="male">Gender:</label>
+                <input type="radio" id="male" name="gender" class="choice" value="male" required> 
+                <label for="male">Male</label> 
+                <input type="radio" id="female" name="gender" class="choice" value="female" required> 
+                <label for="female">Female</label> <br>
+                <label for="age"> Age: </label>
+                <input type="number" id="age" name="age" min=18 required value="18"> <br>
+                <label for="dob"> Date of Birth: </label>
+                <input type="date" id="dob" name="dob"> <br>
+                <label for="fav-color"> Favourite Color:  </label>
+                <input type="color" id="fav-color" name="fav-color"> <br>
+                <label for="country"> Which Country:   </label>
+                <select id="country" name="country">
+                    <option value="none">No Selection</option>
+                    <option value="australia">Australia</option>
+                    <option value="japan">Japan</option>
+                    <option value="indonesia">Indonesia</option>
+                    <option value="norway">Norway</option>
+                    <option value="southafrica">South Africa</option>
+                </select> <br>
+            </fieldset>
+        </div>
+        <div id="indicators">
+            <fieldset>
+                <legend>Your Indicators</legend>
+                <label for="height">Height: </label> Short<input type="range" id="height" name="height" min="0" max="100">Tall <br>
+                <label for="salary">Salary: </label> Poor<input type="range" id="salary" name="salary" min="0" max="100">Rich <br>
+            </fieldset>
+        </div>
+        <div id="contact-information">
+            <fieldset>
+                <legend>Your Contact Information</legend>
+                <label for="email-contact"> Email: </label>
+                <input type="email" id="email-contact" name="email-contact" required> <br>
+                <label for="mobile"> Mobile: </label>
+                <input type="tel" id="mobile" name="mobile" > <br>
+                <label for="address"> Address: </label>
+                <textarea id="address" name="address"></textarea> <br>
+                <label for="email"> Method to Contact You:   </label>
+                <input type="checkbox" id="email" name="email" class="choice">
+                <label for="email">Email</label>
+                <input type="checkbox" id="whatsapp" name="whatsapp" class="choice">
+                <label for="whatsapp">Whatsapp</label>
+                <input type="checkbox" id="in-app-chat" name="in-app-chat" class="choice">
+                <label for="in-app-chat">In-App Chat</label><br>
+            </fieldset>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

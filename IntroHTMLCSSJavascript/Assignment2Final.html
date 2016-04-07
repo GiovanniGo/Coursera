@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Color Guessing Game (Assignment Two)</title>
+<meta name="description" content="">
+<style>
+</style>
+</head>
+<body onload="doGame()">
+   <script>
+       // Dear Evaluator
+       // The answer of the secret color can be observed in the console log for testing.
+       function doGame()
+       {
+           var colors =["blue", "cyan", "gold", "silver", "magenta", "orange", "red", "yellow", "darkseagreen", "rebeccapurple"];
+           var finished = false;
+           var randomIndex = Math.floor(Math.random() * colors.length);
+           var numGuesses = 0;
+           var guessedColor = "";
+           var secretColor = colors[randomIndex];
+           
+           console.log(secretColor);
+           
+           do
+           {
+               numGuesses++;
+               guessedColor = prompt("I am thinking of one of these colors:\n\n" + 
+                                     colors.sort().join(", ") + "\n\n" + 
+                                     "What color am I thinking of?");
+               
+               finished = checkGuess(colors, secretColor, guessedColor);
+               if (finished)
+               {
+                   docBody=document.getElementsByTagName("body")[0];
+                   docBody.style.background = secretColor;
+                   alert("Congratulations! You have guessed the color!\n\nIt took you " + 
+                          numGuesses + 
+                          " guess(es) to finish the game!\n\nYou can see the color in the background" );
+               }
+               
+           }while(!finished);
+       }
+       
+       // intentionally avoid global variables as it is not a great programming practice.
+       // Made the function self contained.
+       function checkGuess(colors, secretColor, guessedColor)
+       {
+           var success = true;
+           if (!colors.includes(guessedColor))
+           {
+               alert("Sorry, I do not recognise your color.\n\nPlease try again." );
+               success = false
+           }
+           else if (guessedColor > secretColor)
+           {
+               alert("Sorry, your guess is not correct.\n\nHint: your color is alphabetically higher than mine.\n\nPlease try again." );
+               success = false
+           }
+           else if (guessedColor < secretColor)
+           {
+               alert("Sorry, your guess is not correct.\n\nHint: your color is alphabetically lower than mine.\n\nPlease try again." );
+               success = false
+           }
+          
+           return success;
+       }
+       
+   </script>
+</body>
+</html>

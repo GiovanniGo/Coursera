@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Matching Game (Assignment Three)</title>
+<meta name="description" content="">
+<style>
+    h1, p { font-family: Arial, Helvetica, sans-serif }
+    img { position: absolute }
+    div 
+    { 
+        position: absolute;
+        width: 500px;
+        height: 500px;
+    }
+    
+    #rightPanel
+    {
+        left: 500px; 
+        border-left: 1px solid black;
+    }
+</style>
+</head>
+<body onload="generateFaces()">
+    <h1>Matching Game</h1>
+    <p>Click on the extra smiling face on the left</p>
+    <div id="leftPanel"></div>
+    <div id="rightPanel"></div>
+    
+   <script>
+       var imageFactory = function()
+       {
+           var img = document.createElement("img");
+           img.setAttribute("src", "smile.png");
+           return img;
+       }
+       
+       var initialiseGame = function()
+       {
+           var leftPanel = document.getElementById("leftPanel");
+           var rightPanel = document.getElementById("rightPanel");
+           var numberOfFaces = 5;
+           var coordinateMax = 400;
+           
+           return function(createImage) {
+               for(var i = 0; i < numberOfFaces; i++) {
+                   var topCoordinate = Math.floor(Math.random() * coordinateMax);
+                   var leftCoordinate = Math.floor(Math.random() * coordinateMax);
+                   var img = createImage();
+                   img.setAttribute("style", "top: " + topCoordinate + "px; left: " + leftCoordinate + "px;");
+                   leftPanel.appendChild(img);
+               }
+               
+               generatedImages = leftPanel.cloneNode(true);
+               generatedImages.removeChild(generatedImages.lastChild)
+               rightPanel.appendChild(generatedImages);
+           }
+       }
+       
+       function generateFaces() {
+           var generateFaces = initialiseGame();
+           generateFaces(imageFactory);
+       }
+       
+   </script>
+</body>
+</html>
