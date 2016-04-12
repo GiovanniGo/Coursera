@@ -8,7 +8,13 @@ Languages used:
 * HTML
 * CSS
 * Javascript
-* Bootstrap CSS and js
+* Less
 
-Developed using:
+Packages used:
+* Bootstrap
+* Font-Awesome
+
+IDE and supporting tools:
 * VS Code
+* Bower
+* NPM
