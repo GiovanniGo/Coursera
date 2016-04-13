@@ -3,9 +3,9 @@ Repository to keep track the progress made to a set of coursera courses that I a
 ## Full Stack Web Development Specialization
 Progress: 2/6 courses completed.
 
-1. HTML, CSS and JavaScript [Completed]
-2. Front-End Web UI Frameworks and Tools [Completed]
-3. Front-End JavaScript Frameworks: AngularJS [In Progress]
+1. HTML, CSS and JavaScript [_Completed_]
+2. Front-End Web UI Frameworks and Tools [_Completed_]
+3. Front-End JavaScript Frameworks: AngularJS [*In Progress*]
 4. Multiplatform Mobile App Development with Web Technologies
 5. Server-side Development with NodeJS
 6. Full Stack Web Development Specialization Capstone Project
@@ -36,7 +36,7 @@ Progress: 0/6 courses completed.
 1. Ruby on Rails: An Introduction
 2. Rails with Active Record and Action Pack
 3. Ruby on Rails Web Services and Integration with MongoDB 
-4. HTML, CSS, and Javascript for Web Developers [In Progress]
+4. HTML, CSS, and Javascript for Web Developers [*In Progress*]
 5. Single Page Web Applications with AngularJS
 6. Capstone: Photo Tourist Web Application
 
