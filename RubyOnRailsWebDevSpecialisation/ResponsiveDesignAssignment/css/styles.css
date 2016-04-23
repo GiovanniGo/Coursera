@@ -63,6 +63,7 @@
     color: black;
     background-color: #4dd2ff
 }
+
 @media (min-width: 992px) {
     .col-md-3 {
         float: left;
@@ -87,6 +88,9 @@
     }
     .thirdMenuBody {
         width: 97.5%;
+    }
+    .thirdMenuHeader {
+        width: 15%
     }
 }
 
