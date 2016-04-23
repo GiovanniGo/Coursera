@@ -31,7 +31,7 @@ IDE and supporting tools:
 ## Ruby on Rails Web Development Specialization
 Progress: 0/6 courses completed.
 
-[Course Link](https://www.coursera.org/specializations/ruby-on-rails) & [Project Hosted Demo Page] (http://giovannigo.github.io/Coursera/RubyOnRailsWebDevSpecialisation/index.html)
+[Course Link](https://www.coursera.org/specializations/ruby-on-rails) & [Project Hosted Demo Page] (http://giovannigo.github.io/Coursera/RubyOnRailsWebDevSpecialisation/ResponsiveDesignAssignment/index.html)
 
 1. Ruby on Rails: An Introduction
 2. Rails with Active Record and Action Pack
