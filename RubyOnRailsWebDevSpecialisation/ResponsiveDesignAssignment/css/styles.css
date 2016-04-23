@@ -4,23 +4,65 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .menuContent {
     background-color: grey;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-    border: 3px solid;
-    width:90%;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
+    width: 90%;
+    border: 1px solid;
     margin-bottom: 15px;
+}
+
+.menuBody {
+    margin-left: auto;
+    margin-right: auto;
+    width:95%;
+}
+
+.menuHeader {
+    position: absolute;
+    border: 1px solid black;
+    width: 30%;
+    text-align: center;
+    right: 0px;
+    top: 0px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 125%;
 }
 
 .row {
     width: 100%;
 }
 
+.header {
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 175%;
+}
+
+.chicken {
+    color: black;
+    background-color: #ff9999
+}
+
+.beef {
+    color: white;
+    background-color: #e62e00
+}
+
+.fish {
+    color: black;
+    background-color: #4dd2ff
+}
 @media (min-width: 992px) {
     .col-md-3 {
         float: left;
@@ -40,8 +82,11 @@
         width: 100%;
     }
     
-   .contentExpand {
+    .thirdMenuContent {
         width: 95%;
+    }
+    .thirdMenuBody {
+        width: 97.5%;
     }
 }
 
