@@ -47,6 +47,8 @@
     margin-bottom: 20px;
     text-align: center;
     font-size: 175%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .chicken {
@@ -64,7 +66,7 @@
     background-color: #4dd2ff
 }
 
-@media (min-width: 992px) {
+@media(min-width: 992px) {
     .col-md-3 {
         float: left;
         width: 33.33%;
@@ -91,7 +93,7 @@
     }
     .thirdMenuHeader {
         width: 15%
-    }
+    } 
 }
 
 @media (max-width: 767px) {
